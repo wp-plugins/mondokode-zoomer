@@ -1,0 +1,54 @@
+
+/* the overlayed element */
+div.overlay {
+	
+	/* growing background image;*/
+	background-image:url(img/overlay/white.png);
+	
+	/* dimensions after the growing animation finishes  */
+	width:800px;
+	height:600px;		
+	
+	/* initially overlay is hidden*/
+	display:none; 
+	
+	/* some padding to layout nested elements nicely  */
+	padding:0px;
+
+}
+
+
+div.overlay div.code {
+ margin-top: 30px;
+ margin-left: 40px;
+ margin-right: 35px;
+ margin-bottom: 25px;
+ height: 575px;
+ overflow: auto;
+
+ font: 12px 'Courier New', Courier, Fixed;
+
+
+}
+
+
+
+/* default close button positioned on upper right corner */
+div.overlay div.close {
+	background-image:url(img/overlay/blackclose.png);
+	position:absolute;
+	left:13px;
+	top:13px;
+	cursor:pointer;
+	height:28px;
+	width:28px;
+
+}
+
+input.zIndexButtonLink {
+	position:relative; 
+	left:-15px; 
+	top:10px; 
+	z-index:1;
+}
+
